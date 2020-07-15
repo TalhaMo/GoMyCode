@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <title>Talha Mohamed</title>
     <link rel="icon" href="res/logo.png">
+    <link rel="stylesheet"  href="css/style.css">
+
 </head>
 <body>
     <header>
@@ -17,7 +20,7 @@
     </header>
 
     <nav>
-        <ul>
+        <ul class="liste1">
             <li><h3><a href="#home">Home</a></h3></li>
             <li><h3><a href="#about">About</a></h3></li>
             <li><h3><a href="#resume">Resume</a></h3></li>
@@ -25,43 +28,55 @@
             <li><h3><a href="#contact">Contact</a></h3></li>
         </ul>
     </nav>
+<div class="container-fluid">
+    <div style="display: flex; justify-content: center; align-items: center; border: 2px solid red;">
+        <section  class="col-lg-6">
+            <h3 id="about"  >About</h3>
+            <img id="talha" class="img-rounded" style="transform:scale(0.75)" src="res/talha.jpg" alt="photo">
+            <p class="bg-success text-primary py-2">I'm a mechanical enginneer graduated from <b>National School of Engineering of Tunisia</b> since 2015.
+                Currently i want to jumpstart my career in software engineering.</p>
+        </section>
+            <section class="col-lg-3 bg-warning img-rounded">
+            <div >
+              <h4>My contact details</h4>
+                <table>
+                    <tr>
+                        <td>Adress:</td>
+                        <td>2083 Ariana el ghazela, Tunisia</td>
+                    </tr>
+                    <tr> 
+                        <td>Mobile:</td>
+                        <td>+216 58 173 193</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><a href="mailto:talhamohamed23@yahoo.com">talhamohamed23@yahoo.com</a></td>
+                    </tr>
+                </table>
+            <P>learn more <a href="#about">about </a>me</P>
+         </div>
+        </section >
+    </div>
+</div>
 
-    <section>
-          <h4>My contact details</h4>
-            <table>
-                <tr>
-                    <td>Adress:</td>
-                    <td>2083 Ariana el ghazela, Tunisia</td>
-                </tr>
-                <tr> 
-                    <td>Mobile:</td>
-                    <td>+216 58 173 193</td>
-                </tr>
-                <tr>
-                    <td>Email:</td>
-                    <td><a href="mailto:talhamohamed23@yahoo.com">talhamohamed23@yahoo.com</a></td>
-                </tr>
-            </table>
-        <P>learn more <a href="#about">about </a>me</P>
-    </section>
-    <section>
-        <h3 id="about">About</h3>
-        <img src="res/talha.jpg" alt="photo">
-        <p>I'm a mechanical enginneer graduated from <b>National School of Engineering of Tunisia</b> since 2015.
-            Currently i want to jumpstart my career in software engineering.</p>
-    </section>
-    <section>
+    
+</div>
+<div class="grid-container">
+<div class="container1">
+    <section class="alert alert-danger">
         <h3 id="resume">Resume</h3>
         <p><b>2010 --> 2012 Preparatory cycle for engineering studies:</b> "Physics & Technical" at the Preparatory Institute for Engineering Studies of Nabeul (IPEIN) (Rank: 60/2005)</p>
-        <img src="res/ipein.jpg" alt="IPEIN">
+        <img class="img-rounded" src="res/ipein.jpg" alt="IPEIN">
         <a href="http://www.ipein.rnu.tn" title="Would you like to visit !" target="_blank">IPEIN</a>
         <p><b>2012-->2015 National School of Engineers of Tunis:</b> National engineering degree of mechanical engineering</p>
         <p>Specialty: Design and stress analysis</p>
-        <img src="res/enit.jpg" alt="ENIT">
+        <img class="img-rounded" src="res/enit.jpg" alt="ENIT">
         <a href="http://www.enit.rnu.tn/" title="Would you like to visit !" target="_blank">ENIT</a>
 
     </section>
-    <section>
+</div>
+<div class="container2">
+    <section class="alert alert-success">
         <h3 id="work">Work</h3>
         <p><b>2016-->2020: Sogeclair aerospace:</b> Method and design engineer</p>
         <p>Project:MAP engineer for the Airbus aircraft A350 XWB</p>
@@ -82,46 +97,60 @@
 
         <iframe width="400" height="300" src="https://www.youtube.com/embed/BEoKlbStI9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
-    <section>
-        <h3 id="contact">Contact me</h3>
-        <p>You're welcome !</p>
-        <p>Please fill out the form below:</p>
-        <form>
-        <table>
-            <tr>
-                <td><label for="name">Name</label></td>
-                <td><input type="text" name="first name" id="name" placeholder="tape your name"></td>
-            </tr>
-            <tr>
-                <td><label for="email">Email</label></td>
-                <td><input type="email" name="email" id="email" placeholder="tape your email"></td>
-            </tr>
-            <tr>
-                <td><label for="password">Password</label></td>
-                <td><input type="password" name="Password" id="password" placeholder="*********"></td>
-            </tr>
-            <tr>
-                <td><label for="message">Message</label></td>
-                <td><textarea name="Message" placeholder="let's your message here" id="message" cols="30" rows="5"></textarea></td>
-            </tr>
-            <tr>
-                <td><label>Reset</label></td>
-                <td><button type="Reset">Reset</button></td>
-            </tr>
-            <tr>
-                <td><label>Submit</td>
-                <td><button type="submit">Submit</button></td>
-            </tr>
-        </table>
-        </form>
-    </section>
+    </div>
+</div>
+<div class="container-fuid">
+<div class="row">
+    <div class="col-lg-4"></div>
+        <section class="jumbotron col-lg-4 img-rounded">
+           
+              
+                    <h2 id="contact" class="text-center bg-info font-weight-bold">Contact me</h2>
+                    <p class="text-center bg-warning font-weight-bold">You're welcome !</p>
+                    <p>Please fill out the form below:</p>
+                    <form>
+                    <table>
+                        <tr>
+                            <td><label for="name">Name</label></td>
+                            <td><input type="text" name="first name" id="name" placeholder="tape your name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email</label></td>
+                            <td><input type="email" name="email" id="email" placeholder="tape your email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Password</label></td>
+                            <td><input type="password" name="Password" id="password" placeholder="*********"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Message</label></td>
+                            <td><textarea name="Message" placeholder="let's your message here" id="message" cols="30" rows="5"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label>Reset</label></td>
+                            <td><button type="Reset">Reset</button></td>
+                        </tr>
+                        <tr>
+                            <td><label>Submit</td>
+                            <td><button type="submit">Submit</button></td>
+                        </tr>
+                    </table>
+                    </form>
+                </div>
+            </div>
+        </section>
+    <div class="col-lg-4"></div>
+    </div>
+</div>
+<div class="enjoy">
     <aside>
         <p id="To hear music">Bring passion to everything i do</p> 
         <audio controls> <source src="res/music.mp3" type="audio/mp3"></audio>
     </aside>
+</div>
     <a href="#TopOfThePage">Let's go top</a>
-<footer>
-    <p>All rights reserved © 2020</p>
+<footer class="footer-copyright text-center py-3">
+    <p style="color: red;">All rights reserved © 2020</p>
 </footer>
 
     
